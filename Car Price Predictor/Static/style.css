@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #0a0a1a;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard {
+  width: 95%;
+  max-width: 1200px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00ffe0;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffe0;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  height: 70vh;
+}
+
+/* Form Section 60% */
+.form-section {
+  flex: 0 0 60%;
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+}
+
+.form-section h2 {
+  color: #00ffe0;
+  margin-bottom: 10px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+.form-section input, .form-section select {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form-section button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #00ffe0;
+  color: #1e1e2f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-section button:hover {
+  background: #00c4b4;
+}
+
+/* Result Section 40% */
+.result-section {
+  flex: 0 0 40%;
+  background: #1e1e2f;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.prediction-meter h2 {
+  color: #00ffe0;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.meter-bg {
+  width: 100%;
+  height: 25px;
+  background: #33334d;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.meter-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #00ffe0, #00c4b4);
+  transition: width 1s ease-in-out;
+}
+
+.prediction-meter h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Car Animation */
+.car-animation {
+  position: relative;
+  height: 120px;
+  margin-top: 20px;
+}
+
+.moving-car img {
+  width: 120px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
